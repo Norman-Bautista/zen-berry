@@ -1,0 +1,13 @@
+# .coderabbit.yaml
+language: "en-US"  # or "ja" for Japanese reviews [citation:2][citation:5]
+
+reviews:
+  profile: "chill"  # "chill" (gentle) or "assertive" (strict) [citation:5]
+  high_level_summary: true
+  review_status: true
+  auto_review:
+    enabled: true
+    drafts: true  # Set to true to review draft PRs
+    base_branches:
+      - "main"
+      - "develop"
