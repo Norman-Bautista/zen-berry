@@ -1,1 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import "tailwindcss";
+@theme {
+  
+    --color-primary: #FFCFCF;
+    --color-primary-ight:  #FFE2E2;
+    --color-background: #FFFDEC;
+    --color-accent: #86A788;
+    --color-accent-dark: #374538;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+
+    --text-xs: 14px
+    --text-sm: 16px;
+    --text-md: 18px;
+    --text-lg: 24px;
+
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+
+}
+
+.btn-primary {
+  @apply bg-primary text-accent-dark font-bold py-2 px-4 rounded-2xl cursor-pointer transition-all duration-300 ease-in-out;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+}
+
+.btn-primary:active {
+  @apply transform scale-95;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.btn-secondary {
+  @apply bg-accent text-white font-bold py-2 px-4 rounded-2xl transition-all duration-300 ease-in-out;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.btn-secondary:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+}
+
+.btn-secondary:active {
+  @apply transform scale-95;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.btn-primary-outlined {
+  @apply border border-primary bg-white text-accent font-bold py-2 px-4 rounded-2xl cursor-pointer transition-all duration-300 ease-in-out;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.btn-primary-outlined:hover {
+  @apply bg-primary;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+}
+
+.btn-primary-outlined:active {
+  @apply transform scale-95;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.btn-secondary-outlined {
+  @apply border border-accent bg-white text-accent font-bold py-2 px-4 rounded-2xl transition-all duration-300 ease-in-out;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.btn-secondary-outlined:hover {
+  @apply bg-accent text-white;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+}
+
+.btn-secondary-outlined:active {
+  @apply transform scale-95;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
