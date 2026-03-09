@@ -1,13 +1,15 @@
-# .coderabbit.yaml
-language: "en-US"  # or "ja" for Japanese reviews [citation:2][citation:5]
-
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: "en-US"
+early_access: false
 reviews:
-  profile: "chill"  # "chill" (gentle) or "assertive" (strict) [citation:5]
+  profile: "chill"
+  request_changes_workflow: false
   high_level_summary: true
+  poem: true
   review_status: true
+  review_details: false
   auto_review:
     enabled: true
-    drafts: true  # Set to true to review draft PRs
-    base_branches:
-      - "main"
-      - "develop"
+    drafts: false
+chat:
+  auto_reply: true
